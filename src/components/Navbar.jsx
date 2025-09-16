@@ -121,7 +121,7 @@ function Navbar() {
             Proyectos
           </Link>
           <a 
-            href="#contact" 
+            href="/contact" 
             className="py-3 px-4 rounded-lg text-gray-300 hover:text-white hover:bg-gray-800/50 transition-colors duration-300"
             onClick={() => setIsMenuOpen(false)}
           >
