@@ -1,8 +1,8 @@
 import React from 'react'
-
-function ProjectCard({ title, description, tech, github, demo, video }) {
+import ReactPlayer from 'react-player'
+function ProjectCard({ title, description, tech, github, demo, video, img = null , videoyt = null}) {
   return (
-    <div className="border border-purple-500/30 p-6 rounded-xl shadow-lg hover:shadow-purple-500/20 transition-all duration-300 bg-gradient-to-br from-gray-900 to-gray-800 hover:-translate-y-2">
+    <div className="border border-purple-500/30 p-6 rounded-xl shadow-lg hover:shadow-purple-500/20 transition-all duration-300 bg-gradient-to-br from-gray-900 to-gray-800 ">
       <h3 className="text-2xl font-bold mb-3 text-purple-400">{title}</h3>
       <p className="mb-4 text-gray-300">{description}</p>
       <div className="mb-4 flex flex-wrap gap-2">
@@ -40,9 +40,30 @@ function ProjectCard({ title, description, tech, github, demo, video }) {
           </a>
         )}
       </div>
-      {video && (
-        <video src={video} controls className="mt-2 w-full rounded-lg border border-purple-500/20"/>
-      )}
+      {video ? (
+        <video
+          src={video}
+          controls
+          className="mt-2 w-full rounded-lg border border-purple-500/20"
+        />
+      ) : videoyt ? (
+        <div className="mt-2 w-full rounded-lg border border-purple-500/20 overflow-hidden aspect-video">
+          <iframe
+            src={videoyt.replace("youtu.be/", "www.youtube.com/embed/")}
+            title={title}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full h-full"
+          />
+        </div>
+      ) : img ? (
+        <img
+          src={img}
+          alt={title}
+          className="mt-2 w-full rounded-lg border border-purple-500/20"
+        />
+      ) : null}
     </div>
   );
 }

@@ -3,7 +3,7 @@ import ProjectCard from '../components/ProjectCard';
 import tfg from '../assets/tfg.webm';
 import loopzxy from '../assets/loopzxy.webm';
 import API from '../assets/API.webm';
-
+import nexus from '../assets/nexus.png';
 function Projects() {
   const projects = [
     {
@@ -29,8 +29,31 @@ function Projects() {
       github: "https://github.com/nasar0/chat-app",
       demo: null,
       video: loopzxy
+    },
+    {
+      title: "Agenda de Juegos y Amigos",
+      description: "Este es el proyecto final de Desarrollo Web en Entorno Servidor, desarrollado en PHP y MySQL. La aplicación permite a los usuarios gestionar su agenda personal con los datos de sus amigos, juegos y préstamos de juegos.",
+      tech: ["PHP", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap"],
+      github: "https://github.com/nasar0/Agenda-de-Juegos.git",
+      demo: null,
+      videoyt:"https://youtu.be/x3P7undlE9Y"
+    },
+    {
+      title: "Nexus - Gestión de Proyectos y Tareas",
+      description: "Sistema de gestión de usuarios, proyectos y tareas con frontend en React y backend en Django en sencillas palabras una plataforma tipo trello.",
+      tech: ["React", "Django REST Framework", "SQLite", "JWT", "Tailwind CSS"],
+      github: "https://github.com/nasar0/Nexus",
+      demo: null,
+      img: nexus
+    },
+    {
+      title: "Buscaminas",
+      description: "Este es un juego clásico de Buscaminas desarrollado completamente en HTML, CSS y JavaScript puro. No requiere frameworks externos y es totalmente funcional desde el navegador.",
+      tech: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/nasar0/Buscaminas.git",
+      demo: null,
+      videoyt: "https://youtu.be/xrHtS0CXJ4w"
     }
-   
   ];
 
   return (
