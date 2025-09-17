@@ -32,8 +32,7 @@ function Landing() {
       "Enfoque en buenas prácticas"
     ],
     "Data Engineering & ML": [
-      "Python", "pandas", "numpy", "scikit-learn", "matplotlib", "seaborn", "BeautifulSoup", "scheduler",
-      "Pipelines ETL", "Web Scraping", "Modelado predictivo (Regresión lineal, Ridge, Lasso)",
+      "Python (pandas, numpy, scikit-learn, matplotlib, seaborn, BeautifulSoup, scheduler, Pipelines ETL)", "Web Scraping", "Modelado predictivo (Regresión lineal, Ridge, Lasso)",
       "Validación cruzada", "AWS S3", "MongoDB Atlas", "SQL avanzado", "SQLAlchemy",
       "Fundamentos de Machine Learning", "IA generativa (nociones)"
     ]
@@ -138,7 +137,7 @@ function Landing() {
           <span className="animate-pulse">|</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-purple-200/80 animate-pulse-slow">
-          Junior Fullstack Developer | Python, FastAPI, Node, React
+          Desarrollador Web Fullstack | Junior Data Engineer | Python, PHP, React, SQL
         </p>
         <Link
           to="/projects"
@@ -228,8 +227,18 @@ function Landing() {
         </div>
       </section>
 
-      {/* Habilidades - Sección mejorada */}
+      {/* Proyectos */}
       <section className="my-16 md:my-24 relative z-10">
+        <h2 className="text-3xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400">Proyectos destacados</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {projects.map((p, i) => (
+            <ProjectCard key={i} {...p} />
+          ))}
+        </div>
+      </section>
+      {/* Habilidades - Sección mejorada */}
+
+       <section className="my-16 md:my-24 relative z-10">
         <h2 className="text-3xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400">
           Habilidades Técnicas
         </h2>
@@ -259,17 +268,6 @@ function Landing() {
           ))}
         </div>
       </section>
-
-      {/* Proyectos */}
-      <section className="my-16 md:my-24 relative z-10">
-        <h2 className="text-3xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400">Proyectos destacados</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {projects.map((p, i) => (
-            <ProjectCard key={i} {...p} />
-          ))}
-        </div>
-      </section>
-
       {/* Contacto */}
       <section id="contact" className="my-16 md:my-24 text-center relative z-10">
         <h2 className="text-3xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400">Contacto</h2>
