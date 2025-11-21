@@ -30,12 +30,12 @@ function Landing() {
     "Soft Skills": [
       "Aprendizaje rápido", "Documentación clara", "Trabajo en equipo",
       "Enfoque en buenas prácticas"
-    ],
-    "Data Engineering & ML": [
-      "Python (pandas, numpy, scikit-learn, matplotlib, seaborn, BeautifulSoup, scheduler, Pipelines ETL)", "Web Scraping", "Modelado predictivo (Regresión lineal, Ridge, Lasso)",
-      "Validación cruzada", "AWS S3", "MongoDB Atlas", "SQL avanzado", "SQLAlchemy",
-      "Fundamentos de Machine Learning", "IA generativa (nociones)"
     ]
+    // "Data Engineering & ML": [
+    //   "Python (pandas, numpy, scikit-learn, matplotlib, seaborn, BeautifulSoup, scheduler, Pipelines ETL)", "Web Scraping", "Modelado predictivo (Regresión lineal, Ridge, Lasso)",
+    //   "Validación cruzada", "AWS S3", "MongoDB Atlas", "SQL avanzado", "SQLAlchemy",
+    //   "Fundamentos de Machine Learning", "IA generativa (nociones)"
+    // ]
   };
 
   // Educación
