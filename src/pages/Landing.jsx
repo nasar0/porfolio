@@ -11,13 +11,13 @@ function Landing() {
   // Habilidades organizadas en categorías
   const skills = {
     Backend: [
-      "PHP", "Laravel", "Python (FastAPI, Django)", "Node.js/Express",
+      "PHP" , "Python (FastAPI, Django)", "Node.js/Express",
       "REST APIs", "JWT", "MySQL", "PostgreSQL", "MongoDB",
       "Optimización de consultas SQL", "Java", "Bash scripting", "Administración Linux"
     ],
     Frontend: [
       "React.js", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap",
-      "jQuery", "Angular (aprendiendo)", "Responsive Design"
+      "jQuery", "Angular (básico)", "Responsive Design"
     ],
     Herramientas: [
       "Docker (básico)", "Uvicorn", "Gunicorn", "Git/GitHub", "Scrum",
