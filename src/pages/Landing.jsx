@@ -137,7 +137,7 @@ function Landing() {
           <span className="animate-pulse">|</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-purple-200/80 animate-pulse-slow">
-          Desarrollador Web Fullstack | Junior Data Engineer | Python, PHP, React, SQL
+          Desarrollador Web Fullstack | Python, PHP, React, SQL
         </p>
         <Link
           to="/projects"
